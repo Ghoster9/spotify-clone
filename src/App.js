@@ -17,7 +17,6 @@ function App() {
     const _token = hash.access_token;
 
     if (_token) {
-
       dispatch({
         type: "SET_TOKEN",
         token: _token,
@@ -38,13 +37,19 @@ function App() {
           playlists: playlists,
         });
       });
+      spotify.getPlaylist("37i9dQZEVXcIfUKVFHt3hQ").then((response) =>
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        })
+      );
     }
   }, []);
 
-
   return (
-    <div className="App">{token ?
-       <Player spotify={spotify}/> : <Login />}</div>
+    <div className="App">
+      {token ? <Player spotify={spotify} /> : <Login />}
+    </div>
   );
 }
 
