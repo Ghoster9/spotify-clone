@@ -2,20 +2,22 @@
 
 This is a Spotify-clone integrated with Spotify API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### installing
 
-## Available Scripts
+Explain how to run the automated tests for this system
 
-In the project directory, you can run:
+Runing in directory server and client
 
-### `npm start`
+```
+npm init
+npm install
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running this app
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
+```
+npm start
+```
 ## Screenshot
 
 <div align="center">
